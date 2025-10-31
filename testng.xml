@@ -1,0 +1,75 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<!--
+<suite name = "Grid Test">
+   <test parallel = "methods" thread-count = "5" name="Test">
+      <classes>
+         <class name="testNG.TestOne" />
+         <class name="testNG.TestTwo"/>
+      </classes>
+   </test>
+</suite>
+
+
+<suite name = "Parallel Testing Suite">
+   <test name = "Parallel Tests" parallel = "methods" thread-count="2">
+      <classes>
+         <class name = "testNG.ParallelTest" />
+      </classes>
+   </test>
+</suite>
+
+
+<suite name="Suite" parallel="none">
+ 	<test name="FirefoxTest">
+ 		<parameter name="browser" value="firefox" />
+ 		<classes>
+ 			<class name="testNG.MultiBrowser" />
+ 		</classes>
+ 	</test>
+ 	<test name="ChromeTest">
+ 		<parameter name="browser" value= "chrome" />
+ 		<classes>
+ 			<class name="testNG.MultiBrowser" />
+ 		</classes>
+ 	</test>
+</suite>
+
+
+<suite name="TestNG XML Dependency Suite" >
+   <test name="Group Dependency" >
+   	<groups>
+   		<dependencies>
+   			<group depends-on= "openbrowser" name= "login"></group>
+   			<group depends-on= "login" name= "viewaccount"></group>
+   			<group depends-on= "viewaccount" name= "logout"></group>
+   		</dependencies>
+   		</groups>
+       <classes> 
+          <class name="testNG.GroupDependency" />
+       </classes>
+   </test>
+ </suite>
+ <suite name="Test-Suite" >
+   <test name="GroupDemo" >
+   		<groups>
+   			<run>
+   				<include name = "demo"></include>
+   			</run>
+   		</groups>
+       <classes> 
+          <class name="testNG.groups_demo" />
+       </classes>
+   </test>
+ </suite>-->
+
+<suite name="Test-Suite" >
+   <test name="TestNG_Project" >
+       <classes> 
+          <class name="testNG.NewTest" />
+          <class name="testNG.Login" />
+          <class name="testNG.Invalid_Login" />
+       </classes>
+   </test>
+ </suite>
+
+ 
